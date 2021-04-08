@@ -1,0 +1,155 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #161625;
+    border-radius: 10px;
+   
+}
+.loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .loading-bar-container {
+    width: 100px;
+    height: 32px;
+    background: #272727;
+  }
+  
+  .loading-bar {
+    height: 32px;
+    background: #fcfcfc;
+}
+.top-bar {
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    left: -3px;
+    top: 0px;
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.side-bar{
+    position: absolute;
+    width: 197px;
+    height: 922px;
+    left: 2px;
+    top: 58px;
+    background: #1E1E30;
+}
+.section-heading{
+    position: absolute;
+    width: 82px;
+    height: 16px;
+    left: 274px;
+    top: 86px;
+
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+.card-1{
+    position: absolute;
+    width: 263px;
+    height: 109px;
+    left: 339px;
+    top: 150px;
+
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.card-2{
+    position: absolute;
+    width: 263px;
+    height: 109px;
+    left: 627px;
+    top: 150px;
+
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.card-3{
+    position: absolute;
+    width: 263px;
+    height: 109px;
+    left: 915px;
+    top: 150px;
+
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.card-4{
+    position: absolute;
+    width: 263px;
+    height: 109px;
+    left: 1203px;
+    top: 150px;
+
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.card-content{
+    position: absolute;
+    margin: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.graph-box{
+    position: absolute;
+    width: 857px;
+    height: 399px;
+    left: 339px;
+    top: 292px;
+
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.record-box{
+    position: absolute;
+    width: 857px;
+    height: 329px;
+    left: 339px;
+    top: 709px;
+
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    
+}
+.barGraph-box{
+    position: absolute;
+    width: 377px;
+    height: 418px;
+    left: 1219px;
+    top: 292px;
+    
+    background: #1E1E30;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}

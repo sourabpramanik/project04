@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Dashboard from './components/dashboard'
 
+//drei
+import {  useProgress } from "@react-three/drei";
+
+// React Spring
+import { a, useTransition } from "@react-spring/web";
+
+
+function Loader() {
+  const { active, progress } = useProgress();
+  const transition = useTransition(active, {
+    from: { opacity: 1, progress: 0 },
+    leave: { opacity: 0 },
+    update: { progress },
+  });
+  return transition(
+    ({ progress, opacity }, active) =>
+      active && (
+        <a.div className='loading' style={{ opacity }}>
+          <div className='loading-bar-container'>
+            <a.div className='loading-bar' style={{ width: progress }}></a.div>
+          </div>
+        </a.div>
+      )
+  );
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div className="body">
+       <Loader/>
+      <div className="top-bar"> 
+
+      </div>
+      <div className="side-bar">
+        
+      </div>
+      <Dashboard/>
+     
     </div>
   );
 }
